@@ -1,0 +1,67 @@
+/* small screen fixes */
+@media only screen and (max-width: 1075px) {
+    .center {
+        text-align: center;
+    }
+    header {
+        height: 125px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 36px;
+        display: block;
+        text-align: center;
+    }
+    header nav {
+        padding-top: 15px;
+        margin-right: 20px;
+        float: none;
+    }
+    header nav ul li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        width: 250px;
+        text-align: center;
+    }
+    .topic-specific {
+        height: auto;
+    }
+    .topic-specific p {
+        display: inline-block;
+    }
+    .topic-specific img {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    header {
+        height: 150px;
+    }
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+    .content {
+        text-align: center;
+    }
+    .benefits {
+        float: none;
+        display: inline-block;
+        width: 75%;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .topic-specific img {
+        max-width: 75%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 170px;
+    }
+}
