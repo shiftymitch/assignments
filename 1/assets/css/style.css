@@ -59,6 +59,11 @@ a {
     font-size: 16px;
 }
 
+a:hover {
+    font-weight: bold;
+    color: lightyellow;
+}
+
 p {
     font-size: 16px;
     margin-bottom: 20px;
@@ -130,7 +135,7 @@ p {
 .icon {
     display: block;
     margin: 10px auto;
-    max-width: 150px;
+    width: 150px;
 }
 
 /* added topic img class */
