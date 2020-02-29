@@ -1,4 +1,4 @@
-/* small screen fixes */
+/* added media rules for smaller screens */
 @media only screen and (max-width: 1176px) {
     .content {
         text-align: center;

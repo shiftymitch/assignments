@@ -87,6 +87,7 @@ p {
     margin-left: 25px;
 }
 
+/* combined multiple classes into single class */
 .topics {
     width: 75%;
     margin-left: 20px;
@@ -118,19 +119,22 @@ p {
     min-width: 250px;
 }
 
+/* combined benefit sub categories and child elements into single classes */
 .benefit-type {
     margin-bottom: 32px;
     padding-bottom: 20px;
     text-align: center;
 }
 
-.benefit-type img {
+/* added icon class */
+.icon {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.img-settings {
+/* added topic img class */
+.topic-img {
     height: 250px;
     margin-bottom: 20px;
 }
@@ -140,9 +144,10 @@ p {
     clear: both;
     text-align: center;
     color: black;
+    font-size: 24px;
 }
 
 #footer h5 {
-    font-size: 12px;
+    font-size: 20px;
 }
 
