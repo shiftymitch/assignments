@@ -59,9 +59,6 @@ a {
 p {
     font-size: 20px;
     margin-bottom: 20px;
-    display: flex;
-    align-content: center;
-    text-align: left;
 }
 
 #seo {
@@ -92,6 +89,7 @@ p {
     margin-left: 20px;
     display: inline-flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: left;
 }
 
@@ -100,6 +98,10 @@ p {
     padding: 20px 50px;
     height: 350px;
     background-color: #0072bb;
+}
+
+.topic-specific p {
+    text-align: left;
 }
 
 .benefits {
@@ -127,7 +129,7 @@ p {
 
 .img-settings {
     height: 250px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #footer {
