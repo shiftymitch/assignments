@@ -2,16 +2,28 @@
 <html lang="en-us">
 
 <head>
+
+    <!-- Added Viewport tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta charset="UTF-8" />
+
+    <!-- Updated Title -->
+    <title>Horiseon</title>
+
+    <!-- Added CSS Reset Stylesheet -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- added @media styles on separate stylesheet -->
     <link rel="stylesheet" href="./assets/css/media.css">
-    <title>Horiseon</title>
+
 </head>
 
 <body>
+    <!-- Changed div to header element -->
     <header>
         <h1 class="font2">Hori<span id="seo">seo</span>n</h1>
+        <!-- changed div to nav element -->
         <nav id="nav">
             <ul>
                 <li>
@@ -27,10 +39,13 @@
         </nav>
     </header>
     <div class="hero"></div>
+    <!-- Changed div to section element -->
     <section class="content">
         <div class="topics">
+            <!-- Added missing id to fix nav hyperlink -->
             <div id="search-engine-optimization" class="topic-specific">
                 <h2>Search Engine Optimization</h2>
+                <!-- Added img alt tag/descriptions -->
                 <img src="./assets/images/search-engine-optimization.jpg" class="float-left img-settings" alt="notebook with seo topics"/>
                 <p>
                     The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
@@ -51,6 +66,7 @@
                 </p>
             </div>
         </div>
+        <!-- Changed div to aside element -->
         <aside class="benefits">
             <div class="benefit-type">
                 <h2>Lead Generation</h2>
@@ -74,7 +90,8 @@
                 </p>
             </div>
         </aside>
-    </>
+    </section>
+    <!-- changed div to footer element -->
     <footer id="footer" class="font2">
         <h4>Made with ❤️️ by Horiseon</h4>
         <h5>
