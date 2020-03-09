@@ -2,7 +2,7 @@ Welcome to my Projects site!
 
 This site will be a home to my class projects. 
 
-The layout of the site uses Bootstrap cards as Project placeholders. Currently there are no live projects on the site, just template cards to see how the projects will appear.
+The layout of the site uses Bootstrap cards as Project placeholders, and to eliminate the need to write media queries. Currently there are no live projects on the site, just template cards to see how the projects will appear.
 
 Each project card will include: 
 1. A screenshot of the project.
