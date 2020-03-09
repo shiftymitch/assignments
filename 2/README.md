@@ -1,4 +1,4 @@
-Welcome to my Projects site.
+Welcome to my Projects site!
 
 This site will be a home to my class projects. 
 
@@ -11,6 +11,6 @@ Each project card will include:
 4. Links to view the project, and share the project. 
 
 TO-DO:
-1. Currently, card share buttons do have any functionality, but I intend to write some javascript to enable social media sharing.
+1. Currently, card share buttons do not have any functionality, but I intend to write some javascript to enable social media sharing.
 2. The last card in the list will be a "+" button to add a new card. This button will be a javascript function to build a new div using template settings from a template card.
 
