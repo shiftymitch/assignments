@@ -3,37 +3,56 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword (length) {
 
-  length = prompt("How long should the password be?");
+  //user input password length
+  length = prompt("How long should the password be? (Min: 8, Max: 128)");
+  if (length<8 || length>128) {
+    return "Invalid length, try again.";
+  } 
+
+  //init variables
   var result = "";
-  var upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var lowerChar = "abcdefghijklmnopqrstuvwxyz";
-  var numChar = "0123456789";
-  var specialChar = "!@#$%^&*"
+  var upper = "";
+  var lower = "";
+  var num = "";
+  var special = "";
 
-  
-  //my first method
+  //user input criteria
+  var includeUpper = confirm("Include uppercase letters?");
+  var includeLower = confirm("Include lowercase letters?");
+  var includeNum = confirm("Include numbers?");
+  var includeSpecial = confirm("Include special characters?");
 
-  // for (var i = 0; i < length; i++) {
-  //   result += upperChar.charAt(Math.floor(Math.random() * upperChar.length));
-  //   result += lowerChar.charAt(Math.floor(Math.random() * lowerChar.length));
-  //   result += numChar.charAt(Math.floor(Math.random() * numChar.length));
-  //   result += specialChar.charAt(Math.floor(Math.random() * specialChar.length));
-  // }
+  //give input values
+  if (includeUpper === true) {
+    upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  } 
 
+  if (includeLower === true) {
+    lower = "abcdefghijklmnopqrstuvwxyz";
+  } 
 
-  //my 2nd method
+  if (includeNum === true) {
+    num = "0123456789";
+  } 
 
-  for (var i = 0; i < length; i++) {
+  if (includeSpecial === true) {
+    special = "!@#$%^&*";
+  } 
+
+  //randomizer variable
+  for (var i = 0; result.length < length; i++) {
     var temp = [
-      upperChar.charAt(Math.floor(Math.random() * upperChar.length)), 
-      lowerChar.charAt(Math.floor(Math.random() * lowerChar.length)), 
-      numChar.charAt(Math.floor(Math.random() * numChar.length)), 
-      specialChar.charAt(Math.floor(Math.random() * specialChar.length))];
+      upper.charAt(Math.floor(Math.random() * upper.length)), 
+      lower.charAt(Math.floor(Math.random() * lower.length)), 
+      num.charAt(Math.floor(Math.random() * num.length)), 
+      special.charAt(Math.floor(Math.random() * special.length))
+    ];
     
-    result += temp[Math.floor(Math.random() * 4)];
+    result += temp[Math.floor(Math.random() * temp.length)];
   }
 
   return result;
+
 }
 
 
