@@ -1,0 +1,89 @@
+body {
+    background-color: #dddddd;
+}
+
+.container {
+    padding: 0px;
+}
+
+.navbar {
+    background-color: #151515;
+    text-shadow: 2px 2px 2px #606060;
+    position: relative;
+    top: 0px;
+    z-index: 999;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.nav-link {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.card {
+    min-width: 20rem;
+}
+
+.card-img-top {
+    opacity: 50%;
+}
+
+.btn:hover {
+    background-color: #cccccc;
+    border: 1px solid #151515;
+    opacity: 50%;
+}
+
+.project {
+    bottom: 100px;
+    position: static;
+    background-color: #151515;
+    border-radius: 0 0 5px 5px;
+    border-top: solid white;
+}
+
+.project h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-secondary {
+    max-width: auto;
+}
+
+.footer {
+    background-color: #151515;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 2px #606060;
+    position: relative;
+    bottom: -225px;
+}
+
+.contact {
+    min-width: 50rem;
+}
+
+.email-button, .contact-button {
+    background-color: #151515;
+    font-weight: bolder;
+    color: #f9f9f9;
+}
+
+.contact-button {
+    width: 15rem;
+}
+
+.email-button a {
+    color: #f9f9f9;
+}
