@@ -39,6 +39,7 @@ function generatePassword (length) {
     special = "!@#$%^&*";
   } 
 
+  //check if all are null
   if (upper === "" && lower === "" && num === "" && special === "") {
     return "Must include some type of characters, try again.";
   }
