@@ -20,4 +20,4 @@
 ![](./Assets/randomizeinput.png)
 
 8. Return result and close function.  
-![](../Assets/returnresult.png)
+![](./Assets/returnresult.png)
