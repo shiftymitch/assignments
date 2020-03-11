@@ -39,6 +39,10 @@ function generatePassword (length) {
     special = "!@#$%^&*";
   } 
 
+  if (upper === "" && lower === "" && num === "" && special === "") {
+    return "Must include some type of characters, try again.";
+  }
+
   //randomizer variable
   for (var i = 0; result.length < length; i++) {
     var temp = [
