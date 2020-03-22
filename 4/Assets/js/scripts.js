@@ -5,6 +5,7 @@ var startButton = document.getElementById("start");
 var seconds = 30;
 var endgame = false;
 var elements = [];
+var highScores = [];
 
 //----FUNCTIONS----//
 //element creator
@@ -50,22 +51,26 @@ startButton.addEventListener("click", function() {
     // createEl("timerCount", "h2", "timerCount text-center", "timerCount", seconds + " seconds");
     //start timer
     timerUpdater();
-    //create question text & buttons
+    //create question1 text & buttons
     question1();
 })
 
 
 //----START TIMER----//
 function timerUpdater() {
+    //set interval
     var timerInterval = setInterval( 
         function() { 
         seconds--;
+        //update counter seconds left
         document.getElementById("timerCount").innerText = seconds + " seconds";
-        
+        //if timer ends game over
         if (seconds === 0) {
             gameOver();
             clearInterval(timerInterval);
-        } else if (endgame === true) {
+        } 
+        //if endgame reached end pause timer
+        else if (endgame === true) {
             clearInterval(timerInterval);
         }
 
@@ -80,7 +85,9 @@ function timerUpdater() {
 
 //----QUESTION 1----//
 function question1() {
+    //question text
     createEl("question1", "p", "card-text text-center", "question1", "Commonly used datatypes DO NOT include:");
+    //answer buttons
     createEl("button1", "button", "btn btn-secondary", "answer1", "strings");
     createEl("button2", "button", "btn btn-secondary", "answer2", "booleans");
     createEl("button3", "button", "btn btn-secondary", "answer3", "alert");
@@ -95,7 +102,9 @@ function question1() {
 
 //----QUESTION 2----//
 function question2() {
+    //question text
     createEl("question2", "p", "card-text text-center", "question2", "The condition in an if/else statement is enclosed within _____.");
+    //answer buttons
     createEl("button1", "button", "btn btn-secondary", "answer5", "parentheses");
     createEl("button2", "button", "btn btn-secondary", "answer6", "curly brackets");
     createEl("button3", "button", "btn btn-secondary", "answer7", "quotes");
@@ -111,7 +120,9 @@ function question2() {
 
 //----QUESTION 3----//
 function question3() {
+    //question text
     createEl("question3", "p", "card-text text-center", "question3", "Arrays in JavaScript can be used to store _____.");
+    //answer buttons
     createEl("button1", "button", "btn btn-secondary", "answer9", "numbers and strings");
     createEl("button2", "button", "btn btn-secondary", "answer10", "other arrays");
     createEl("button3", "button", "btn btn-secondary", "answer11", "booleans");
@@ -125,7 +136,9 @@ function question3() {
 
 //----QUESTION 4----//
 function question4() {
+    //question text
     createEl("question4", "p", "card-text text-center", "question4", "String values must be enclosed within _____ when being assigned to variables.");
+    //answer buttons
     createEl("button1", "button", "btn btn-secondary", "answer13", "commas");
     createEl("button2", "button", "btn btn-secondary", "answer14", "curly brackets");
     createEl("button3", "button", "btn btn-secondary", "answer15", "quotes");
@@ -140,26 +153,32 @@ function question4() {
 
 //gameover
 function gameOver() {
+    //remove elements
     elements.forEach(displayNone);
+    //show game over text
     createEl("gameover", "h2", "gameover text-center", "gameover", "Game Over");
     gameover.style = "color:red";
 }
 
 //----WINNER----//
 function winner() {
+    //remove elements
     elements.forEach(displayNone);
     removeEl("timeRemaining");
     removeEl("timerCount");
+    //add winner text & score
     createEl("winner", "h2", "winner text-center", "winner", "Congratulations, you won!");
     createEl("score", "h3", "score text-center", "score", "Your score: "+seconds);
+    //winner score = time left
     var userScore = seconds;
     var highScoreName = prompt("Enter your name for high score ranking:");
-    var highScores = [];
-    highScores.push(
-        localStorage.setItem("Name", JSON.stringify(highScoreName)),
-        localStorage.setItem("Score", JSON.stringify(userScore))
-    );
-
+    //add score data to localstorage & push to array
+        // highScores.push(
+        //     localStorage.setItem("Name", JSON.stringify(highScoreName)),
+        //     localStorage.setItem("Score", JSON.stringify(userScore))
+        // );
+    highScores.push(highScoreName, userScore);
+    localStorage.setItem("Scores", JSON.stringify(highScores));
 }
 
 
