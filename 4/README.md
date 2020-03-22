@@ -30,5 +30,5 @@
 10. Try Again  
 ![](./Assets/Images/readme/tryagain.png)
 
-11. High Scores Updater
+11. High Scores Updater  
 ![](./Assets/Images/readme/highscores-script.png)
