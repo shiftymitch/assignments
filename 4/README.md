@@ -1,42 +1,31 @@
-# 04 Web APIs: Code Quiz
+# JavaScript: Password Generator
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+1. Set variables.
+![](./Assets/Images/readme/vars.png)
 
-## User Story
+2. Element Creator  
+![](./Assets/Images/readme/elementcreator.png)
 
-```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+3. Element Removers
+![](./Assets/Images/readme/removeelements.png)
 
-## Acceptance Criteria
+4. Start Quiz
+![](./Assets/Images/readme/startquiz.png)
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-```
+5. Start Timer
+![](./Assets/Images/readme/starttimer.png)
 
-The following animation demonstrates the application functionality:
+6. Run Questions
+![](./Assets/Images/readme/questionhandler.png)
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+7. Final Question
+![](./Assets/Images/readme/finalquestion.png)
 
-### Review
+8. Game Over
+![](./Assets/Images/readme/gameover.png)
 
-You are required to submit the following for review:
+9. Winner
+![](./Assets/Images/readme/winner.png)
 
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+10. Try Again
+![](./Assets/Images/readme/tryagain.png)

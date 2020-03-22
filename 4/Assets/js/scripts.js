@@ -47,8 +47,7 @@ startButton.addEventListener("click", function() {
     timerCount.setAttribute("id", "timerCount");
     timerCount.innerText = seconds + " seconds";
     replaceEl.appendChild(timerCount);
-    // createEl("timeRemaining", "p", "timerText text-center", "timerText", "Time Remaining:");
-    // createEl("timerCount", "h2", "timerCount text-center", "timerCount", seconds + " seconds");
+    
     //start timer
     timerUpdater();
     //create question1 text & buttons
@@ -108,6 +107,7 @@ function question1() {
     //correct answer clicked
     document.getElementById("answer3").addEventListener("click", function() {
         elements.forEach(displayNone);
+        //next question
         question2();
     })
 }
@@ -138,6 +138,7 @@ function question2() {
     //correct answer clicked
     document.getElementById("answer5").addEventListener("click", function() {
         elements.forEach(displayNone);
+        //next question
         question3();
     })
 }
@@ -168,6 +169,7 @@ function question3() {
     //correct answer clicked
     document.getElementById("answer12").addEventListener("click", function() {
         elements.forEach(displayNone);
+        //next question
         question4();
     })
 }
@@ -197,7 +199,9 @@ function question4() {
     //correct answer clicked
     document.getElementById("answer15").addEventListener("click", function() {
         elements.forEach(displayNone);
+        //end game
         endgame = true;
+        //run winner rules
         winner();
     })
 }
@@ -238,7 +242,9 @@ function winner() {
 
 //try again
 function tryAgain() {
+    //create button
     createEl("tryAgain", "button", "btn btn-secondary", "tryAgain", "Try Again?")
+    //button listener to reload page on click
     document.getElementById("tryAgain").addEventListener("click", function() {
         location.reload();
     })
