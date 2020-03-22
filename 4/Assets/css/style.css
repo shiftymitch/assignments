@@ -87,3 +87,9 @@ body {
 .email-button a {
     color: #f9f9f9;
 }
+
+.highScores {
+    color: #151515;
+    font-weight: bold;
+    margin-top: 20px;
+}
