@@ -1,4 +1,4 @@
-# JavaScript: Password Generator
+# WEB APIs: Coding Quiz Challenge
 
 1. Set Variables  
 ![](./Assets/Images/readme/vars.png)
