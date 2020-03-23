@@ -9,26 +9,29 @@
 3. Element Removers  
 ![](./Assets/Images/readme/removeelements.png)
 
-4. Start Quiz  
+4. Wrong Answer Clicked  
+![](./Assets/Images/readme/wronganswer.png)
+
+5. Start Quiz  
 ![](./Assets/Images/readme/startquiz.png)
 
-5. Start Timer  
+6. Start Timer  
 ![](./Assets/Images/readme/starttimer.png)
 
-6. Run Questions  
+7. Run Questions  
 ![](./Assets/Images/readme/questionhandler.png)
 
-7. Final Question  
+8. Final Question  
 ![](./Assets/Images/readme/finalquestion.png)
 
-8. Game Over  
+9. Game Over  
 ![](./Assets/Images/readme/gameover.png)
 
-9. Winner  
+10. Winner  
 ![](./Assets/Images/readme/winner.png)
 
-10. Try Again  
+11. Try Again  
 ![](./Assets/Images/readme/tryagain.png)
 
-11. High Scores Updater  
+12. High Scores Updater  
 ![](./Assets/Images/readme/highscores-script.png)

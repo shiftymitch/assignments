@@ -19,9 +19,6 @@ function updateHighScores() {
             createEl("score", "p", "score", "score"+i, scores[i]);
         }
     }
-    // for (var i = 0; i < hsListItems.length; i++) {
-    //     highScores.innerText = hsListItems[i-1] + ": " +  hsListItems[i];
-    // }
 }
 
 updateHighScores();

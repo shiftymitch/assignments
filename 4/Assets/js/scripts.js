@@ -205,7 +205,6 @@ function winner() {
     }
     //write score to localStorage
     highScore.push(highScoreName, userScore);
-
     //if empty
     emptyStorage();
     function emptyStorage() {
@@ -217,11 +216,8 @@ function winner() {
         var existingScores = localStorage.getItem("Scores");
         existingScores.replace(/[^a-zA-Z ]/g, "");
         existingScores += ' ' + highScore;
-        localStorage.setItem("Scores", existingScores);
-        
+        localStorage.setItem("Scores", existingScores); 
         }
-    
-    
     } 
     //try again option
     tryAgain();
