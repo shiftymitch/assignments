@@ -5,7 +5,7 @@ var startButton = document.getElementById("start");
 var seconds = 30;
 var endgame = false;
 var elements = [];
-var highScores = [];
+var highScore = [];
 
 //----FUNCTIONS----//
 //element creator
@@ -28,7 +28,13 @@ function displayNone(element) {
         element.style = "display:none";
     }
 }
-
+//wrong answer clicked
+function wrong(x) {
+    document.getElementById(x).addEventListener("click", function() {
+        alert("wrong answer, -5 seconds");
+        seconds-=5;
+    })
+}
 
 
 //----START QUIZ----//
@@ -91,19 +97,10 @@ function question1() {
     createEl("button2", "button", "btn btn-secondary", "answer2", "booleans");
     createEl("button3", "button", "btn btn-secondary", "answer3", "alert");
     createEl("button4", "button", "btn btn-secondary", "answer4", "numbers");
-    //wrong answer clicked
-    document.getElementById("answer1").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
-    document.getElementById("answer2").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
-    document.getElementById("answer4").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
+    //wrong answer clicked, -5 seconds
+    wrong("answer1");
+    wrong("answer2");
+    wrong("answer4");
     //correct answer clicked
     document.getElementById("answer3").addEventListener("click", function() {
         elements.forEach(displayNone);
@@ -122,19 +119,10 @@ function question2() {
     createEl("button2", "button", "btn btn-secondary", "answer6", "curly brackets");
     createEl("button3", "button", "btn btn-secondary", "answer7", "quotes");
     createEl("button4", "button", "btn btn-secondary", "answer8", "square brackets");
-    //wrong answer, -5 seconds clicked
-    document.getElementById("answer6").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
-    document.getElementById("answer7").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
-    document.getElementById("answer8").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
+    //wrong answer clicked, -5 seconds
+    wrong("answer6");
+    wrong("answer7");
+    wrong("answer8");
     //correct answer clicked
     document.getElementById("answer5").addEventListener("click", function() {
         elements.forEach(displayNone);
@@ -153,19 +141,10 @@ function question3() {
     createEl("button2", "button", "btn btn-secondary", "answer10", "other arrays");
     createEl("button3", "button", "btn btn-secondary", "answer11", "booleans");
     createEl("button4", "button", "btn btn-secondary", "answer12", "all of the above");
-    //wrong answer, -5 seconds clicked
-    document.getElementById("answer9").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
-    document.getElementById("answer10").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
-    document.getElementById("answer11").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
+    //wrong answer clicked, -5 seconds 
+    wrong("answer9");
+    wrong("answer10");
+    wrong("answer11");
     //correct answer clicked
     document.getElementById("answer12").addEventListener("click", function() {
         elements.forEach(displayNone);
@@ -183,19 +162,10 @@ function question4() {
     createEl("button2", "button", "btn btn-secondary", "answer14", "curly brackets");
     createEl("button3", "button", "btn btn-secondary", "answer15", "quotes");
     createEl("button4", "button", "btn btn-secondary", "answer16", "parentheses");
-    //wrong answer, -5 seconds clicked
-    document.getElementById("answer13").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
-    document.getElementById("answer14").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
-    document.getElementById("answer16").addEventListener("click", function() {
-        alert("wrong answer, -5 seconds");
-        seconds-=5;
-    })
+    //wrong answer clicked, -5 seconds
+    wrong("answer13");
+    wrong("answer14");
+    wrong("answer16");
     //correct answer clicked
     document.getElementById("answer15").addEventListener("click", function() {
         elements.forEach(displayNone);
@@ -234,10 +204,28 @@ function winner() {
         highScoreName = prompt("Enter your name for high score ranking:");
     }
     //write score to localStorage
-    highScores.push(highScoreName, userScore);
-    localStorage.setItem("Scores", JSON.stringify(highScores));
+    highScore.push(highScoreName, userScore);
+
+    //if empty
+    emptyStorage();
+    function emptyStorage() {
+        if (localStorage.getItem("Scores") === null) {
+            console.log(localStorage.getItem("Scores"));
+            localStorage.setItem("Scores", highScore);
+        } else {
+        //else if scores exist
+        var existingScores = localStorage.getItem("Scores");
+        existingScores.replace(/[^a-zA-Z ]/g, "");
+        existingScores += ' ' + highScore;
+        localStorage.setItem("Scores", existingScores);
+        
+        }
+    
+    
+    } 
     //try again option
     tryAgain();
+    
 }
 
 //try again
