@@ -23,7 +23,40 @@ for (var i = 1; i < 10; i++) {
     $(".hour"+i).text(hour.format("h:mmA"));
     $(".task"+i).append(input);
     $(".button"+i).text("SAVE");
+    $(".button"+i).attr("id", i);
+    
+    var tasks = [];
+    var storedTask = localStorage.getItem("task "+i+"");
+    tasks.push(storedTask);
+    $(".task"+i)[0].firstChild.value = tasks;
 }
+
+
+
+//save task input
+$(".saveBtn").on("click", function() {
+    var btnId = parseInt($(this).attr("id"));
+    var tempTask = $(".task"+btnId+"");
+    var inputBox = tempTask[0].firstChild;
+
+    //toggle input editable
+    var editable = inputBox.readOnly = true;
+    localStorage.setItem("task "+btnId+"", inputBox.value)
+})
+
+//edit task
+$(".tasks").on("click", function(event) {
+    var inputVal = event.target;
+    var editable = inputVal.readOnly;
+    
+    if (editable) {
+        inputVal.readOnly = !editable;
+    }
+})
+
+// $(this).on("click", function(event) {
+//     console.log(event.target);
+// })
 
 
 //create time blocks / first attempt
