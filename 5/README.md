@@ -9,4 +9,4 @@
 3. Format time blocks based on past, present or future.
 4. Save & retrieve inputs via localstorage.
 
-[Try the deployed app: ](https://shiftymitch.github.io/assignments/5/)
+## [Try it out!](https://shiftymitch.github.io/assignments/5/)
