@@ -2,7 +2,7 @@ $(document).ready(function() {
     var apiKey = "e4743f50eae9eb0a5f18bf3950527b9a"
     var zipCode = "84014";
     var cityName = prompt("City Name");
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&APPID="+apiKey+""
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&APPID="+apiKey+""
 
     //AJAX API Call
     $.ajax({
