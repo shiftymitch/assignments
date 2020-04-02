@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/svg" href="../2/Assets/Images/cx_logo.svg">
+    <title>ShiftyCX | OpenWeatherMap</title>
+    
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./Assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark position-sticky">
+        <img src="../2/Assets/Images/shiftycx_logo.svg" width="125px" class="d-inline-block align-top mr-4 ml-4" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+<!-- !!!Need to fix links once deployed!!! -->
+                <a class="nav-item nav-link" href="https://shiftymitch.github.io/assignments/2/index.html">portfolio</a>
+                <a class="nav-item nav-link" href="https://shiftymitch.github.io/assignments/2/about.html">about</a>
+                <a class="nav-item nav-link" href="https://shiftymitch.github.io/assignments/2/contact.html">contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Insert Weather Data Here -->
+        <div class="results">
+            <h2 class="cityName"></h2>
+            <p class="temp"></p>
+            <i class="icon"></i>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <h5 class="text-light">[Site by Mitch Henderson]</h5>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <!-- JQuery --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+    <!-- Moment JavaScript --><script type="text/javascript" src="https://momentjs.com/downloads/moment.min.js"></script>
+    
+    <!-- My Scripts -->
+    <script type="text/javascript" src="./Assets/js/scripts.js"></script>
+</body>
+</html>
