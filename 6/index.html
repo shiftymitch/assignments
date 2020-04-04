@@ -32,10 +32,22 @@
 
     <div class="container">
         <!-- Insert Weather Data Here -->
-        <div class="results">
-            <h2 class="cityName"></h2>
-            <p class="temp"></p>
-            <i class="icon"></i>
+        <div class="results card mt-4">
+            <form action="">
+                <div class="card-body">
+                    <h2 class="cityName card-header text-center">City Name: 
+                        <input type="text" value="" id="cityNameInput">
+                        <button class="btn btn-secondary" type="submit" id="getWeather">Get Weather</button>
+                    </h2>
+                    <div class="col m-3">
+                        <p>Temp: </p>
+                        <h1 class="temp"  style="font-size: 6em"></h1>
+                        <p>Conditions: </p>
+                        <h1 class="iconDetail" style="font-size: 3em"></h1>
+                        <img class="icon img-fluid">
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 

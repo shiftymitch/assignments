@@ -1,23 +1,28 @@
 $(document).ready(function() {
-    var apiKey = "e4743f50eae9eb0a5f18bf3950527b9a"
-    var zipCode = "84014";
-    var cityName = prompt("City Name");
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&APPID="+apiKey+""
 
-    //AJAX API Call
-    $.ajax({
-        url: queryURL,
-        method: "GET"
-    }).then(function(response){
-        var temp = (response.main.temp - 273.15) * (9/5) + 32;
+    //get input
+    $("#getWeather").on("click", function(event) {
+        event.preventDefault();
+        var apiKey = "e4743f50eae9eb0a5f18bf3950527b9a"
+        var cityName = $("#cityNameInput").val();
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&APPID="+apiKey+""
 
-        $(".cityName").text(response.name);
-        $(".temp").text("Temp: " + temp.toFixed());
-        console.log(response);
-    })
-
-    //function to display results
-    
-
+        //AJAX API Call
+        if (cityName) {
+            $.ajax({
+                url: queryURL,
+                method: "GET"
+            }).then(function(response){
+                console.log(response);
+                var temp = (response.main.temp - 273.15) * (9/5) + 32;
+                var iconId = response.weather[0].icon;
+                $(".temp").text(temp.toFixed()+"°");
+                $(".icon").attr("src", "http://openweathermap.org/img/wn/"+iconId+"@2x.png");
+                $(".iconDetail").text(response.weather[0].description);
+            })
+        } else if (!cityName) {
+            alert("Please enter a city.");
+        }
+    });
 })
 
