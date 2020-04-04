@@ -32,22 +32,42 @@
 
     <div class="container">
         <!-- Insert Weather Data Here -->
-        <div class="results card mt-4">
-            <form action="">
-                <div class="card-body">
-                    <h2 class="cityName card-header text-center">City Name: 
-                        <input type="text" value="" id="cityNameInput">
-                        <button class="btn btn-secondary" type="submit" id="getWeather">Get Weather</button>
-                    </h2>
-                    <div class="col m-3">
-                        <p>Temp: </p>
+        <div class="results mt-4">
+            <h2 class="cityName card-header text-center">City Name: 
+                <input type="text" value="" id="cityNameInput">
+                <button class="btn btn-secondary" type="submit" id="getWeather">Get Weather</button>
+            </h2>
+        </div>
+        <div class="card-group">
+            <div class="card text-center">
+                <header class="result-header card-header"></header>
+                <div class="card-body row">
+                    <div class="col m-2 border" id="temp">
+                        <p>Temp</p>
                         <h1 class="temp"  style="font-size: 6em"></h1>
-                        <p>Conditions: </p>
-                        <h1 class="iconDetail" style="font-size: 3em"></h1>
+                    </div>
+                    <div class="col m-2 border text-center" id="sky-conditions">
+                        <p>Sky Conditions</p>
+                        <h1 class="iconDetail" style="font-size: 2em"></h1>
                         <img class="icon img-fluid">
                     </div>
+                    <div class="col m-2 border text-center" id="wind">
+                        <p>Wind</p>
+                        <h1 class="wind" style="font-size: 6em"></h1>
+                    </div>
+                    <div class="col m-2 border text-center" id="humidity">
+                        <p>Humidity</p>
+                        <h1 class="humidity" style="font-size: 6em"></h1>
+                    </div>
+                    <div class="col m-2 border text-center" id="uv-index">
+                        <p>UV Index</p>
+                        <h1 class="uv-index" style="font-size: 6em"></h1>
+                    </div>
                 </div>
-            </form>
+                <div class="row card-footer text-center">
+                    <span class="date-pulled"></span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -67,6 +87,7 @@
     <!-- Bootstrap core JavaScript --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
     <!-- Moment JavaScript --><script type="text/javascript" src="https://momentjs.com/downloads/moment.min.js"></script>
+    <!-- Font Awesome --><script src="https://kit.fontawesome.com/a076d05399.js"></script>
     
     <!-- My Scripts -->
     <script type="text/javascript" src="./Assets/js/scripts.js"></script>
