@@ -4,6 +4,9 @@
   font-size: 2rem;
 }
 
+#search-history p:hover {
+  cursor: pointer; 
+}
 
 /* Portfolio CSS */
 body {

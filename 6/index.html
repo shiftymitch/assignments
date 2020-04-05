@@ -30,38 +30,75 @@
         </div>
     </nav>
 
-    <div class="container">
-        <!-- Insert Weather Data Here -->
-        <div class="results mt-4">
-            <h2 class="cityName card-header text-center">City Name: 
-                <input type="text" value="" id="cityNameInput">
-                <button class="btn btn-secondary" type="submit" id="getWeather">Get Weather</button>
-            </h2>
+    <div class="container-fluid">
+        <h1 class="title text-center">Weather Report</h1>
+        <!-- Search Input -->
+        <div class="results card-header m-4 text-center">
+            <p class="cityName col m-1">Enter A City Name:</p>
+            <input type="text" id="cityNameInput" class="col m-1" style="max-height:40px">
+            <button class="col btn btn-secondary m-1" type="submit" id="getWeather">Get Weather</button>
         </div>
-        <div class="card-group">
-            <div class="card text-center">
+        <div class="card-group m-4">
+            <!-- Search History -->
+            <div class="card col-3 text-center">
+                <h3 class="search-history card-header text-center">Search History</h3>
+                <div class="card-body" id="search-history">
+                    <!-- feed search history -->
+                </div>
+            </div>
+            <div class="card col-9 text-center">
                 <header class="result-header card-header"></header>
+                <h4 class="pt-2">Current Weather</h4>
                 <div class="card-body row">
                     <div class="col m-2 border" id="temp">
                         <p>Temp</p>
-                        <h1 class="temp"  style="font-size: 6em"></h1>
-                    </div>
-                    <div class="col m-2 border text-center" id="sky-conditions">
-                        <p>Sky Conditions</p>
-                        <h1 class="iconDetail" style="font-size: 2em"></h1>
-                        <img class="icon img-fluid">
+                        <h3 class="temp"  style="font-size: 6em"></h3>
                     </div>
                     <div class="col m-2 border text-center" id="wind">
                         <p>Wind</p>
-                        <h1 class="wind" style="font-size: 6em"></h1>
+                        <h3 class="wind" style="font-size: 5em"></h3>
                     </div>
                     <div class="col m-2 border text-center" id="humidity">
                         <p>Humidity</p>
-                        <h1 class="humidity" style="font-size: 6em"></h1>
+                        <h3 class="humidity" style="font-size: 5em"></h3>
                     </div>
                     <div class="col m-2 border text-center" id="uv-index">
                         <p>UV Index</p>
-                        <h1 class="uv-index" style="font-size: 6em"></h1>
+                        <h3 class="uv-index" style="font-size: 5em"></h3>
+                    </div>
+                    <div class="col m-2 border text-center" id="sky-conditions">
+                        <p>Sky Conditions</p>
+                        <h3 class="iconDetail" style="font-size: 2em"></h3>
+                        <img class="icon img-fluid">
+                    </div>
+                </div>
+
+                <h4>5-Day Forcast</h4>
+                <div class="card-body row" id="forcast">
+                    <div class="col m-2 border text-center">
+                        <p class="forcast-day" id="day1"></p>
+                        <h3 class="day1" style="font-size: 1em"></h3>
+                        <img class="day1-img img-fluid">
+                    </div>
+                    <div class="col m-2 border text-center">
+                        <p class="forcast-day" id="day2"></p>
+                        <h3 class="day2" style="font-size: 1em"></h3>
+                        <img class="day2-img img-fluid">
+                    </div>
+                    <div class="col m-2 border text-center">
+                        <p class="forcast-day" id="day3"></p>
+                        <h3 class="day3" style="font-size: 1em"></h3>
+                        <img class="day3-img img-fluid">
+                    </div>
+                    <div class="col m-2 border text-center">
+                        <p class="forcast-day" id="day4"></p>
+                        <h3 class="day4" style="font-size: 1em"></h3>
+                        <img class="day4-img img-fluid">
+                    </div>
+                    <div class="col m-2 border text-center">
+                        <p class="forcast-day" id="day5"></p>
+                        <h3 class="day5" style="font-size: 1em"></h3>
+                        <img class="day5-img img-fluid">
                     </div>
                 </div>
                 <div class="row card-footer text-center">
