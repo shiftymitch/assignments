@@ -110,8 +110,8 @@ $(document).ready(function() {
                         //populate forcast data to 5-day
                         function forcastDay(day, index) {
                             var imgURL = "http://openweathermap.org/img/wn/"+response3.list[index].weather[0].icon+"@2x.png"
-                            $("#day"+day).text(moment().add(1, 'd').format("dddd MMMM Do"));
-                            $(".day"+day).text(response3.list[7].weather[0].description);
+                            $("#day"+day).text(moment().add(day, 'd').format("dddd MMMM Do"));
+                            $(".day"+day).text(response3.list[index].weather[0].description);
                             $(".day"+day+"-img").attr("src", imgURL);    
                         }
                         forcastDay(1, 7);
