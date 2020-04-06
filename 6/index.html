@@ -30,25 +30,29 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <h1 class="title text-center">Weather Report</h1>
-        <!-- Search Input -->
-        <div class="results card-header m-4 text-center">
-            <p class="cityName col m-1">Enter A City Name:</p>
-            <input type="text" id="cityNameInput" class="col m-1" style="max-height:40px">
-            <button class="col btn btn-secondary m-1" type="submit" id="getWeather">Get Weather</button>
-        </div>
+    <div class="container">
+        <div class="input-header">
+            <div class="text-center" style="max-width:75%">
+                <h1 class="title">Weather Report</h1>
+                <!-- Search Input -->
+                <div class="results m-4">
+                    <p class="cityName col m-1">Enter A City Name:</p>
+                    <input type="text" id="cityNameInput" class="col m-1" style="max-height:40px">
+                    <button class="col btn btn-secondary m-1" type="submit" id="getWeather">Get Weather</button>
+                </div>
+            </div>
+        </div> 
         <div class="card-group m-4">
             <!-- Search History -->
             <div class="card col-3 text-center">
-                <h3 class="search-history card-header text-center">Search History</h3>
+                <h3 class="search-history weather-header card-header text-center">Search History</h3>
                 <div class="card-body" id="search-history">
                     <!-- feed search history -->
                 </div>
             </div>
             <div class="card col-9 text-center">
                 <header class="result-header card-header"></header>
-                <h4 class="pt-2">Current Weather</h4>
+                <h4 class="weather-header pt-2">Current Weather</h4>
                 <div class="card-body row">
                     <div class="col m-2 border" id="temp">
                         <p>Temp</p>
@@ -73,7 +77,7 @@
                     </div>
                 </div>
 
-                <h4>5-Day Forcast</h4>
+                <h4 class="weather-header pt-2">5-Day Forcast</h4>
                 <div class="card-body row" id="forcast">
                     <div class="col m-2 border text-center">
                         <p class="forcast-day" id="day1"></p>
@@ -102,7 +106,7 @@
                     </div>
                 </div>
                 <div class="row card-footer text-center">
-                    <span class="date-pulled"></span>
+                    <p class="date-pulled"></p>
                 </div>
             </div>
         </div>

@@ -4,8 +4,31 @@
   font-size: 2rem;
 }
 
+#search-history p {
+  border: 1px solid lightgrey;
+}
+
 #search-history p:hover {
   cursor: pointer; 
+}
+
+.container {
+  padding: 0;
+}
+
+.weather-header {
+  background-color: lightgrey;
+  border-bottom: 2px solid #151515;
+}
+
+.input-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.date-pulled {
+  
 }
 
 /* Portfolio CSS */
