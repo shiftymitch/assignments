@@ -32,10 +32,6 @@ body {
     min-width: 20rem;
 }
 
-.card-img-top {
-    opacity: 50%;
-}
-
 .btn:hover {
     background-color: #cccccc;
     border: 1px solid #151515;
