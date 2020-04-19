@@ -1,16 +1,25 @@
-Welcome to my Projects site!
+#  Mitch Henderson - Portfolio
 
-This site will be a home to my class projects. 
+[View Live Site](https://shiftymitch.github.io/portfolio/2/)
 
-The layout of the site uses Bootstrap cards as Project placeholders, and to eliminate the need to write media queries. Currently there are no live projects on the site, just template cards to see how the projects will appear.
+![](./Assets/Images/live-site.png)
 
-Each project card will include: 
-1. A screenshot of the project.
-2. A Title.
-3. A quick description.
-4. Links to view the project, and share the project. 
+### Projects
 
-TO-DO:
-1. Currently, card share buttons do not have any functionality, but I intend to write some javascript to enable social media sharing.
-2. The last card in the list will be a "+" button to add a new card. This button will be a javascript function to build a new div using template settings from a template card.
+  - Earthquake Now
+  - Weather Report
+  - Workday Scheduler
 
+### Tech
+
+* [Twitter Bootstrap] - great UI boilerplate for modern web apps
+* [jQuery]
+* Moment.js
+* Earthquake.USGS.gov API
+* LocationIQ API
+* NewsAPI.org
+* OpenWeatherMap API
+
+### Todos
+
+ - Add recent projects
