@@ -12,12 +12,12 @@
 
 ### Tech
 
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [jQuery]
+* Bootstrap
+* jQuery
 * Moment.js
 * Earthquake.USGS.gov API
 * LocationIQ API
-* NewsAPI.org
+* NewsAPI.org API
 * OpenWeatherMap API
 
 ### Todos
