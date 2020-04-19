@@ -35,7 +35,8 @@ body {
 }
 
 .btn:hover {
-    background-color: #cccccc;
+    background-color: #f9f9f9;
+    color: #151515;
     border: 1px solid #151515;
     opacity: 50%;
 }
@@ -88,6 +89,7 @@ body {
     width: 15rem;
 }
 
-.email-button a {
-    color: #f9f9f9;
+.email-button:hover {
+    background-color: #f9f9f9;
+    color: #151515;
 }

@@ -1,8 +1,8 @@
-var today = moment();
-
 $(document).ready(function() {
 
-$("#currentDay").text(today.format("dddd, MMMM Mo, YYYY")).css("font-weight", "bold");
+var today = moment();
+
+$("#currentDay").text(today.format("dddd, MMMM DD, YYYY")).css("font-weight", "bold");
 
 //create time blocks 
 for (var i = 1; i < 10; i++) {
