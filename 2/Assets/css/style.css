@@ -1,5 +1,9 @@
 body {
-    background-color: #dddddd;
+    /* background-color: #dddddd; */
+    background-image: url("../Images/bg/3.png");
+    background-position: center;
+    background-size: 100%;
+    background-position: 0 0px;
 }
 
 .container {
@@ -30,6 +34,12 @@ body {
 
 .card {
     min-width: 20rem;
+    background-color: #151515;
+    color: #f9f9f9
+}
+
+.card hr {
+    color: #f9f9f9;
 }
 
 .btn:hover {
@@ -37,6 +47,10 @@ body {
     color: #151515;
     border: 1px solid #151515;
     opacity: 50%;
+}
+
+.btn-danger {
+    opacity: 75%
 }
 
 .project {
