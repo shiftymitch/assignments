@@ -1,5 +1,21 @@
 body {
+    background-color: #f9f9f9;
+}
+
+.bg1 {
     background-image: url("../Images/bg/4.png");
+    background-position: 0 0px;
+    background-size: 100%;
+}
+
+.bg2 {
+    background-image: url("../Images/bg/5.png");
+    background-position: 0 0px;
+    background-size: 100%;
+}
+
+.bg3 {
+    background-image: url("../Images/bg/6.png");
     background-position: 0 0px;
     background-size: 100%;
 }
