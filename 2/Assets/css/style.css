@@ -64,6 +64,11 @@ div {
     opacity: 25%;
 }
 
+.card-title {
+    text-align: center;
+    justify-content: center;
+}
+
 .img-fluid {
     max-width: 100%;
     height: 100%;
