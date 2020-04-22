@@ -1,3 +1,8 @@
+div, footer, header, nav, section {
+    display: inline-block;
+    margin: 0;
+} 
+
 body {
     /* background-color: #dddddd; */
     background-image: url("../Images/bg/3.png");
@@ -7,7 +12,7 @@ body {
 }
 
 .container {
-    padding: 0px;
+    display: inline;
 }
 
 .navbar {
@@ -81,6 +86,7 @@ body {
     text-shadow: 2px 2px 2px #606060;
     height: 300px;
     width: 100%;
+    position: absolute;
     text-align: center;
     display: flex;
     align-items: center;
