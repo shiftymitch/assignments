@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    padding: 0px;
+    position: relative;
 }
 
 .navbar {
@@ -39,7 +39,8 @@ body {
 }
 
 .card hr {
-    color: #f9f9f9;
+    border-top: 1px solid #f9f9f9;
+    opacity: 25%;
 }
 
 .btn:hover {
