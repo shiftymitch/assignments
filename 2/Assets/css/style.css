@@ -30,6 +30,8 @@ body {
 .row {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .card {
