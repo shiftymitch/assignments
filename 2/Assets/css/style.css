@@ -35,7 +35,8 @@ body {
 }
 
 .card {
-    min-width: 20rem;
+    /* min-width: 20rem; */
+    min-width: 325px;
     background-color: #151515;
     color: #f9f9f9
 }
