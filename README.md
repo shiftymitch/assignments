@@ -2,7 +2,7 @@
 
 [View Live Site](https://shiftymitch.github.io/portfolio/2/)
 
-![](./Assets/Images/live-site.png)
+![](./2/Assets/Images/live-site.png)
 
 ### Projects
 
