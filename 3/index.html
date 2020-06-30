@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/svg" href="./Assets/Images/cx_logo.svg">
+    <title>Password Generator</title>
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./Assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+  </head>
+  <body class="bg2">
+    <nav class="navbar navbar-expand-lg navbar-dark position-sticky">
+      <img src="./Assets/Images/shiftycx_logo.svg" width="125px" class="d-inline-block align-top mr-4 ml-4" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
+              <a class="nav-item nav-link" href="./index.html">portfolio</a>
+              <a class="nav-item nav-link" href="./about.html">about</a>
+              <a class="nav-item nav-link" href="./contact.html">contact</a>
+          </div>
+      </div>
+  </nav>
+
+    <div class="wrapper">
+      <div class="card">
+        <div class="card-header text-center">
+          <h2>Random Password Generator</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Click the button to generate a password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn" onclick="generatePassword">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer mt-5">
+      <div class="container-fluid">
+          <div class="d-flex justify-content-center">
+              <h5 class="text-light">[site & background designed by <a href="https://github.com/shiftymitch" target="_blank">Mitch Henderson</a>]</h5>
+          </div>
+          <p class="text-light">&copy; Copyright 2020</p>
+      </div>
+  </footer>
+
+  <!-- Scripts -->
+
+  <!-- JQuery --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript --><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+  
+  <!-- My Scripts -->
+  <script type="text/javascript" src="./Assets/js/script.js"></script>
+  </body>
+</html>
