@@ -1,23 +1,41 @@
-# JavaScript: Password Generator
+# Password Generator
 
-1. User inputs password length with prompt.
-2. Check if length is less than 8 or greater than 128.  
-![](./Assets/userinputpasswordlength.png)
+![](./Assets/Images/LiveApp_ScreenShot.png)
 
-3. Declare variables to be used later.  
-![](./Assets/initvariables.png)
+## Description
 
-4. Get user input criteria.  
-![](./Assets/userinputcriteria.png)
+A random password generator.
 
-5. Give the input values.  
-![](./Assets/giveinputvalues.png)
+## Table of Contents
 
-6. Check if all inputs are false.  
-![](./Assets/checkifnull.png)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 
-7. Randomize input criteria in for loop, and save to result variable.  
-![](./Assets/randomizeinput.png)
+## Installation
 
-8. Return result and close function.  
-![](./Assets/returnresult.png)
+[Launch App](https://shiftymitch.github.io/portfolio/3/)
+
+## Usage 
+
+1. Open the application link above.
+2. Click "Generate Password Button.
+3. Answer pop up questions to design the password criteria.
+4. Copy password and use as needed.
+
+## Credits
+
+[Mitch Henderson](https://shiftymitch.github.io/portfolio/2)
+
+## License
+
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+## Contributing
+
+No contributing necessary. Just clone the repo and make adjustments as needed.
+
+## Questions
+
+Questions can be directed via email to shiftymitch@gmail.com
